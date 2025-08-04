@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Enhanced Form Page</h1>
+    <p>This page demonstrates HTML5 form elements, validation, semantic structure, and other HTML features.</p>
+  </header>
+
+  <section>
+    <h2>Information List</h2>
+    <ul>
+      <li>Use of semantic tags (header, section, footer)</li>
+      <li>Form with validation and accessibility features</li>
+      <li>Integration of multimedia and tables</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sample Table</h2>
+    <table  border="1">
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Duration</th>
+          <th>Instructor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML & CSS</td>
+          <td>4 Weeks</td>
+          <td>Jane Doe</td>
+        </tr>
+        <tr>
+          <td>JavaScript Basics</td>
+          <td>6 Weeks</td>
+          <td>John Smith</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Embedded Media</h2>
+    <p>Learn more from this short video:</p>
+    <video width="320" height="240" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h1>Registration Form</h1>
+    <form action="#" method="post" autocomplete="on" novalidate> 
+        <p><label for="fullname">Full Name:</label>
+       <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required /> </p>
+       <p> <label for="email">Email:</label> 
+      <input type="email" id="email" name="email" placeholder="example@email.com" required /></p>
+      <p><label for="password">Password:</label> 
+      <input type="password" id="password" name="password" required minlength="8" /></p>
+
+     <p><label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /></p>
+
+     <p><label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+      </select> </p>
+
+     <p> <label for="bio">Short Bio:</label>
+      <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4"></textarea></p>
+
+      <p><label for="readonlyField">Referral Code:</label>
+      <input type="text" id="readonlyField" name="referral" value="AUTO-2025" readonly /></p>
+      <p class="readonly-note">This code was automatically generated and cannot be changed.</p>
+
+      <label>
+      <p> <input type="checkbox" name="agree" required />
+        I agree to the <a href="#">terms and conditions</a>.</p>
+      </label>
+
+     <p><button type="submit">Submit Form</button></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
